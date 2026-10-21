@@ -1,6 +1,3 @@
-"""Simulação de cache de páginas usando FIFO e LRU."""
-
-
 def simular_fifo(sequencia, quantidade_frames):
     if quantidade_frames < 1:
         raise ValueError("A quantidade de frames deve ser maior que zero.")

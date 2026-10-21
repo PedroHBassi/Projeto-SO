@@ -1,4 +1,3 @@
-"""Testes automáticos das funcionalidades principais."""
 from memoria import simular_fifo, simular_lru, sequencia_belady
 from deadlock import detectar_deadlock
 

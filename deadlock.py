@@ -1,4 +1,3 @@
-
 def detectar_deadlock(grafo_espera):
     estado = {}
     pilha = []

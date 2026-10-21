@@ -1,4 +1,3 @@
-"""Regras da loja fictícia e integração com os algoritmos de Sistemas Operacionais."""
 from memoria import simular_fifo, simular_lru, exibir_resultado, sequencia_belady
 from deadlock import detectar_deadlock
 
@@ -6,15 +5,14 @@ from deadlock import detectar_deadlock
 class LojaJogos:
     def __init__(self):
         self.catalogo = {
-            1: {"nome": "The Legend of Zelda: Tears of the Kingdom", "preco": 299.90, "estoque": 4, "plataforma": "Nintendo Switch"},
-            2: {"nome": "EA Sports FC 26", "preco": 349.90, "estoque": 5, "plataforma": "PlayStation / Xbox / PC"},
+            1: {"nome": "GTA 6", "preco": 499.90, "estoque": 4, "plataforma": "PlayStation / Xbox"},
+            2: {"nome": "EA Sports FC 27", "preco": 349.90, "estoque": 5, "plataforma": "PlayStation / Xbox / PC"},
             3: {"nome": "Minecraft", "preco": 119.90, "estoque": 8, "plataforma": "PC / Console"},
-            4: {"nome": "God of War Ragnarök", "preco": 249.90, "estoque": 3, "plataforma": "PlayStation / PC"},
-            5: {"nome": "Sonic X Shadow Generations", "preco": 199.90, "estoque": 2, "plataforma": "PlayStation / Xbox / Switch / PC"},
-            6: {"nome": "Cyberpunk 2077", "preco": 179.90, "estoque": 6, "plataforma": "PC / PlayStation / Xbox"},
+            4: {"nome": "Counter Strike 2", "preco": 89.90, "estoque": 3, "plataforma": "PC"},
+            5: {"nome": "The Wither 3", "preco": 249.90, "estoque": 2, "plataforma": "PlayStation / Xbox / Switch / PC"},
+            6: {"nome": "Cyberpunk 2077", "preco": 249.90, "estoque": 6, "plataforma": "PC / PlayStation / Xbox"},
         }
         self.pedidos = []
-        # A sequência de acessos representa páginas de dados de produtos consultadas.
         self.acessos_produtos = []
         self.frames_cache = 3
         self.proximo_id_pedido = 1
