@@ -97,8 +97,11 @@ Esta é uma simulação educacional. Os dados da loja permanecem em memória dur
 **Disciplina:** Sistemas Operacionais  
 **Linguagem:** Python  
 **Projeto:** Simulação de uma loja de jogos eletrônicos e conceitos de Sistemas Operacionais
+<<<<<<< HEAD
 
 
 ## Simulação e solução de deadlock
 
 A opção 9 demonstra um ciclo de espera entre P1 e P2. Em seguida, simula a recuperação cancelando a operação P2, removendo suas esperas e verificando que o ciclo desapareceu. Essa recuperação é didática: não cancela pedidos reais nem controla processos do sistema operacional.
+=======
+>>>>>>> 4e0ad7ed83cc393dfcea5f32aca495bcfadd1996

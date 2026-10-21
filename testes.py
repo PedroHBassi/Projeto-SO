@@ -1,5 +1,9 @@
 from memoria import simular_fifo, simular_lru, sequencia_belady
+<<<<<<< HEAD
 from deadlock import detectar_deadlock, resolver_deadlock
+=======
+from deadlock import detectar_deadlock
+>>>>>>> 4e0ad7ed83cc393dfcea5f32aca495bcfadd1996
 
 
 def executar_testes():
@@ -12,8 +16,11 @@ def executar_testes():
         casos.append((f"{nome} conta 1 hit e 2 faults", r["hits"] == 1 and r["faults"] == 2))
     casos.append(("Detecta deadlock em ciclo", detectar_deadlock({"P1": ["P2"], "P2": ["P1"]}) == ["P1", "P2"]))
     casos.append(("Não detecta deadlock sem ciclo", detectar_deadlock({"P1": ["P2"], "P2": []}) == []))
+<<<<<<< HEAD
     grafo_resolvido, vitima = resolver_deadlock({"P1": ["P2"], "P2": ["P1"]}, "P2")
     casos.append(("Resolve deadlock cancelando processo vítima", vitima == "P2" and detectar_deadlock(grafo_resolvido) == []))
+=======
+>>>>>>> 4e0ad7ed83cc393dfcea5f32aca495bcfadd1996
     try:
         simular_fifo([1, 2], 0)
         casos.append(("Rejeita zero frames", False))

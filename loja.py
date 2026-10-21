@@ -131,6 +131,7 @@ class LojaJogos:
         print("A sequência é um teste teórico do algoritmo de cache, não um histórico real de vendas.")
 
     def simular_deadlock(self):
+<<<<<<< HEAD
         from deadlock import resolver_deadlock
 
         print("\n=== DEADLOCK NO PROCESSAMENTO DE PEDIDOS ===")
@@ -158,3 +159,17 @@ class LojaJogos:
         else:
             print("Ainda existe um ciclo envolvendo:", ", ".join(restantes))
         print("Observação: é uma simulação didática; nenhum pedido real da loja é cancelado.")
+=======
+        print("\n=== DEADLOCK NO PROCESSAMENTO DE PEDIDOS ===")
+        print("Cenário simulado:")
+        print("- Processo P1 (pedido de console) segura o recurso R1 (estoque reservado) e espera R2 (pagamento liberado).")
+        print("- Processo P2 (pedido de jogo) segura R2 (pagamento reservado) e espera R1 (estoque liberado).")
+        print("Esse cenário forma um ciclo de espera.")
+        grafo = {"P1": ["P2"], "P2": ["P1"]}
+        envolvidos = detectar_deadlock(grafo)
+        if envolvidos:
+            print("DEADLOCK DETECTADO entre:", ", ".join(envolvidos))
+            print("Solução possível no sistema real: liberar reservas em ordem definida ou cancelar uma das operações.")
+        else:
+            print("Nenhum deadlock detectado.")
+>>>>>>> 4e0ad7ed83cc393dfcea5f32aca495bcfadd1996
