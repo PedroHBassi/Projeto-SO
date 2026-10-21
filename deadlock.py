@@ -1,8 +1,5 @@
 def detectar_deadlock(grafo_espera):
-<<<<<<< HEAD
     """Retorna os processos envolvidos em ciclos do grafo de espera."""
-=======
->>>>>>> 4e0ad7ed83cc393dfcea5f32aca495bcfadd1996
     estado = {}
     pilha = []
     envolvidos = set()
@@ -27,7 +24,6 @@ def detectar_deadlock(grafo_espera):
             dfs(processo)
     return sorted(envolvidos)
 
-<<<<<<< HEAD
 
 def resolver_deadlock(grafo_espera, processo_vitima=None):
     """Simula a recuperação cancelando um processo envolvido e suas esperas.
@@ -50,5 +46,4 @@ def resolver_deadlock(grafo_espera, processo_vitima=None):
         while processo_vitima in destinos:
             destinos.remove(processo_vitima)
     return grafo, processo_vitima
-=======
->>>>>>> 4e0ad7ed83cc393dfcea5f32aca495bcfadd1996
+
